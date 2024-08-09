@@ -7,7 +7,7 @@ const app = express();
 injectSpeedInsights();
 
 app.get("/", (req, res) => {
-  res.send("Express on Vercel");
+  res.send(<SpeedInsights/>);
 });
 
 app.listen(5000, () => {
