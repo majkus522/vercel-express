@@ -1,13 +1,10 @@
-import { SpeedInsights } from "@vercel/speed-insights/next";
-
 // Add Express
 const express = require("express");
 
 const app = express();
-injectSpeedInsights();
 
 app.get("/", (req, res) => {
-  res.send(<SpeedInsights/>);
+  res.send("Express on Vercel");
 });
 
 app.listen(5000, () => {
