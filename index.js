@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const express = require("express");
 
 const app = express();
+injectSpeedInsights();
 
 app.get("/", (req, res) => {
   res.send("Express on Vercel");
